@@ -1,0 +1,112 @@
+<?php
+	/**
+	 * Created by PhpStorm.
+	 * User: deezombiedude612
+	 * Date: 2018-12-08
+	 * Time: 01:34
+	 */
+	
+	?>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Page Title -->
+		<title>Henry Heng | Home</title>
+		
+		<!-- Shortcut Icon -->
+		<link rel="shortcut icon" href="images/hhicon.png">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/index_home.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/nav.css">
+		
+		<!-- Font Awesome Icons CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<!-- /head -->
+	
+	<body class="see-bkg-first">
+		<div id="see-me-first">
+			<nav>
+				<a class="selected" href=".">Home</a>
+				<a href="about/">About Me</a>
+				<a href="projects/">Projects</a>
+				<a href="https://deezombiedude612.wordpress.com" target="_blank">Personal Development</a>
+				<a href="community-service/">Community Service</a>
+			</nav>
+			<!-- /nav -->
+		
+			<section id="greeting">
+				<h1 id="front-title">WELCOME TO HENRY'S WEBSITE!</h1>
+			</section>
+			<!-- /section#greeting -->
+		</div>
+		<!-- /div#see-me-first -->
+	
+		<section id="abt-me">
+			<div id="portrait">
+				<img src="images/portrait.jpg" alt="portrait">
+			</div>
+			<!-- /div#portrait -->
+			
+			<br class="mobile-only">
+			
+			<div id="abt-me-text">
+				<h1 class="section-title">HEY THERE, HI THERE, HO THERE!</h1>
+				<p>
+					I'm Henry! I'm a recent Computer Science graduate from Taylor's University, currently pursuing
+					MSc in Computer Science (By Research) at Sunway University. My research interests mainly revolve
+					around Algorithm Analysis, Artificial Intelligence, Cybersecurity, and Cryptography. I enjoy
+					solving Math problems, and playing an array of casual mobile games in my spare time. I sometimes
+					tend to find myself brushing up on my programming skills while I no longer regularly attend formal
+					classes on programming in any learning institution. I have experience guiding weaker peers in
+					subjects I enjoy and excel in, most of which were gained through my time as a peer leader during my
+					undergraduate studies. Like many other people, I procrastinate a lot, but that is something I'm not
+					afraid to admit; that is a must if I ever want to learn to get back up and continue doing what I'm
+					supposed to do!
+				</p>
+				<button type="button" onclick="location.href = 'about/'">MORE ABOUT ME</button>
+			</div>
+			<!-- /div#abt-me-text -->
+		</section>
+		<!-- /section#abt-me -->
+
+<!--		<div style="height: 100vh"></div>-->
+	
+		<section id="resume">
+			<div style="height: 25vh"></div>
+			<h1 class="section-title">Feel free to download a copy!</h1>
+			<p>The following links will open a new tab in your browser.</p>
+			<p>
+				<button type="button" onclick="window.open('pdf/HHW_cv2019.pdf', '_blank')">CV</button>
+				<button type="button" onclick="window.open('pdf/HHW_resume2019.pdf', '_blank')">Resume</button>
+			</p>
+			<p>You may also drop me an <a href="mailto:henryheng612@hotmail.com">e-mail</a> for further enquiries.</p>
+		</section>
+		<!-- /section#resume -->
+	
+		<footer>
+			<p>@<?php echo date('Y'); ?> Henry Heng</p>
+			<a href="https://twitter.com/HenryHHW" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;
+			<a href="https://www.instagram.com/deezombiedude/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>&nbsp;
+			<a href="https://www.facebook.com/deezombiedude612" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>&nbsp;
+			<a href="https://www.linkedin.com/in/henryheng612/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>&nbsp;
+			<a href="https://www.github.com/deezombiedude612" target="_blank"><i class="fa fa-github fa-lg"></i></a>&nbsp;
+			<a href="https://www.youtube.com/user/deezombiedude612/" target="_blank"><i class="fa fa-youtube-play fa-lg"></i></a>
+		</footer>
+		<!-- /footer -->
+
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- External JS -->
+		<script src="js/index_home.js"></script>
+	</body>
+	<!-- /body -->
+
+</html>
+<!-- /html -->

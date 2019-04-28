@@ -1,0 +1,101 @@
+/* custom fonts */
+@font-face {
+	font-family: 'Daniel';
+	src: url('../fonts/daniel/daniel.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gunny Rewritten';
+	src: url('../fonts/gunny_rewritten/gnyrwn971.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes.ttf') format('truetype');
+}@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes_bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Over the Rainbow';
+	src: url('../fonts/Over_the_Rainbow/OvertheRainbow.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SF Compact Display';
+	src: url('../fonts/sf_compact_display/SFCompactDisplay-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+
+/* general overall layout */
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 100vw;
+}
+
+body {
+	/*background: cornflowerblue;*/
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #ffffff url("../images/generic.jpg") top center fixed;
+	/*background-size: cover;*/
+}
+
+#front-title {
+	font-family: 'Over the Rainbow', sans-serif;
+	font-size: 54px;
+	text-align: center;
+}
+
+.section-title {
+	font-family: "Over the Rainbow", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+p, section#timeline ul.ul-modlist li, ol li, ul li {
+	font-family: "SF Compact Display", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 18px;
+}
+
+h2 {
+	font-family: "SF Compact Display", sans-serif;
+}
+
+button {
+	background-color: white;
+	display: inline-block;
+	padding: 15px 32px;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	margin: .5em .5em 2em .5em;
+	border-radius: 8px;
+}
+
+button:hover {
+	background-color: rgba(256, 256, 256, 0.1);
+	color: white;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+/* main-content here */
+
+section#main {
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 20px;
+	width: 70%;
+	margin: auto;
+	padding: 25px 0;
+	text-align: center;
+}
+section#main h2.section-title {
+	color: white;
+}

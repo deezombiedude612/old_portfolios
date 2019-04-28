@@ -1,0 +1,242 @@
+/* custom fonts */
+@font-face {
+	font-family: 'Daniel';
+	src: url('../fonts/daniel/daniel.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gunny Rewritten';
+	src: url('../fonts/gunny_rewritten/gnyrwn971.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes.ttf') format('truetype');
+}@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes_bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Over the Rainbow';
+	src: url('../fonts/Over_the_Rainbow/OvertheRainbow.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SF Compact Display';
+	src: url('../fonts/sf_compact_display/SFCompactDisplay-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+
+/* general overall layout */
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 100vw;
+}
+
+body {
+	/*background: cornflowerblue;*/
+	background: #555555 url("../images/home.jpg") center center fixed;
+	background-size: cover;
+	transition: 0.1s ease-in;
+}
+
+#front-title {
+	font-family: 'Over the Rainbow', sans-serif;
+	font-size: 54px;
+}
+
+.section-title {
+	font-family: "Over the Rainbow", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+p {
+	font-family: "SF Compact Display", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 18px;
+}
+
+button {
+	background: rgba(255, 255, 255, 1);
+	display: inline-block;
+	padding: 15px 32px;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	margin: .5em .5em 2em .5em;
+	border-radius: 8px;
+}
+
+button:hover {
+	background-color: rgba(256, 256, 256, 0.1);
+	color: white;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+#see-me-first, #abt-me, #resume {
+	/*width: 100vw;*/
+}
+
+#see-me-first {
+	height: 100vh;
+	/*background: brown;*/
+	/*background-image: url("../images/home_apologies.jpg");*/
+	background-size: cover;
+	background-position: center;
+}
+
+.see-bkg-first {
+	background: url("../images/home_apologies.jpg") center center fixed;
+	background-size: cover;
+	transition: 0.3s ease-in;
+}
+
+/* greeting */
+
+#greeting {
+	height: 60vh;
+	/*background-color: darkmagenta;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1#front-title {
+	text-align: center;
+}
+
+/* about-me */
+
+section#abt-me {
+	/*background: aquamarine;*/
+	background-color: rgba(0, 0, 0, .8);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	/*margin-right: 15px;*/
+	width: 100%;
+}
+
+div#portrait, div#abt-me-text {
+	padding: 20px;
+}
+
+div#portrait {
+	float: left;
+	/*background: aqua;*/
+}
+
+div#portrait > img {
+	object-fit: cover;
+	width: 100%;
+	min-height: 350px;
+}
+
+div#abt-me-text {
+	/*background: darkorange;*/
+	/*background: black;*/
+	color: white;
+}
+
+div#abt-me-text p {
+	line-height: 1cm;
+}
+
+/* resume */
+#resume {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 150px 0;
+}
+
+#resume * {
+	text-align: center;
+	color: white;
+}
+
+/*#resume button {*/
+	/*background-color: white;*/
+	/*display: inline-block;*/
+	/*padding: 15px 32px;*/
+	/*border: none;*/
+	/*color: black;*/
+	/*text-align: center;*/
+	/*font-size: 18px;*/
+	/*margin: .5em .5em 2em .5em;*/
+	/*border-radius: 8px;*/
+/*}*/
+
+/*#resume button:hover {*/
+	/*background-color: rgba(256, 256, 256, 0.1);*/
+	/*color: white;*/
+	/*-webkit-transition: all .1s ease;*/
+	/*-moz-transition: all .1s ease;*/
+	/*-o-transition: all .1s ease;*/
+	/*-ms-transition: all .1s ease;*/
+	/*transition: all .1s ease;*/
+/*}*/
+
+#resume a {
+	color: white;
+	/*color: black;*/
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#resume a:hover {
+	text-decoration: underline;
+}
+
+#resume button {
+	color: black;
+}
+
+#resume button:hover {
+	color: white;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+	div#portrait {
+		min-width: 250px;
+	}
+
+	br.mobile-only {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	html, body {
+		margin: 0;
+		padding: 0;
+		min-width: 100vw;
+	}
+
+	section#abt-me {
+		display: inline-block;
+		/*width: 100%;*/
+		width: 100vw;
+	}
+
+	div#portrait, div#abt-me-text {
+		width: calc(100vw - 30px);
+		padding: 15px;
+	}
+
+	div#portrait {
+		text-align: center;
+	}
+
+	div#portrait > img {
+		display: inline-block;
+		/*max-width: 300px;*/
+		height: 450px;
+	}
+}
