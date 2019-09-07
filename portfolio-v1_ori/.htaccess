@@ -1,0 +1,13 @@
+#ErrorDocument 401 /error_funny/error_401.html
+#ErrorDocument 403 /error_funny/index.html
+#ErrorDocument 404 /error_funny/index.html
+ErrorDocument 401 /401/index.html
+ErrorDocument 403 /403/index.html
+ErrorDocument 404 /404/index.html
+ErrorDocument 500 /500/index.html
+ErrorDocument 502 /502/index.html
+ErrorDocument 503 /503/index.html
+ErrorDocument 504 /504/index.html
+
+IndexIgnore *
+Options -Indexes
