@@ -1,0 +1,54 @@
+/* CSS Document: Community Service Page */
+
+@font-face {
+	font-family: 'Gunny Rewritten';
+	src: url('../fonts/gunny_rewritten/gnyrwn971.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'SF Compact Display';
+	src: url('../fonts/sf_compact_display/SFCompactDisplay-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+
+body > div.container-fluid {
+	padding-top: 25px;
+}
+
+.journal {
+	margin: 0 auto;
+}
+
+.log-image {
+	max-height: 500px;
+	margin: 50px 0;
+}
+
+.video {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.quote {
+	font-family: "Gunny Rewritten", "SF Compact Display", Arial, sans-serif;
+	font-size: 24px;
+	margin: 0 auto;
+}
+
+.card {
+	float: left;
+	margin: 10px;
+	width: 30rem;
+}
+
+.card-image {
+	max-height: 400px;
+	float: left;
+}
+
+img.card-img {
+	height: 100%;
+}
+
+.card-img-top {
+	background-color: white;
+}

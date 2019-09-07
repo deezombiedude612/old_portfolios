@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Henry Heng</title>
+
+        <!-- Shortcut Icon -->
+        <link rel="shortcut icon" href="images/hhicon.png">
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome Icons CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!-- External CSS -->
+        <link href="css/constant.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/footer_transparent.css" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78618719-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-78618719-2');
+        </script>
+    </head>
+
+    <body class="dark">
+        <section id="see-me-first">
+            <div class="col-xl-12" id="menu">
+                <h1 id="title">Henry Heng's Website</h1>
+                <span class="sub-text">Postgrad CS Student @ Sunway University</span>
+                <h1 class="sub-text" id="presto-chango">If you see this message, JavaScript may not be enabled.</h1>
+                <a class="sub-text" href="./about/">About Me</a><br>
+                <a class="sub-text" href="./portfolio/">Portfolio</a><br>
+                <!-- <a class="sub-text" href="./community-service/">Community Service</a><br> -->
+                <!-- <a class="sub-text" href="https://blog.henryheng612.com">Blog (Incoherent Thoughts)</a><br> -->
+                <a class="sub-text" href="./explored/">Christianity Explored</a><br>
+                <a class="sub-text" href="./pdf/HHW_resume2019.pdf" target="_blank">Resume (on new tab)</a><br>
+                <a class="sub-text" href="./pdf/HHW_cv2019.pdf" target="_blank">Curriculum Vitae (on new tab)</a><br>
+
+                <br>
+                <div id="dt">
+                    <div><i class="fas fa-sun fa-lg"></i></div>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-toggle" onclick="darkToggle()" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div><i class="fas fa-moon fa-lg"></i></div>
+                </div>
+                <!-- /div#dt -->
+
+                <span class="sub-text" id="clue">5</span>
+            </div>
+            <!-- /div#menu -->
+
+            <div class="col-xl-12" id="hide-me-first" style="display: none;">
+                <span class="sub-text" id="output">You have found the elusive, sub-par master mode!</span><br><br>
+                <input class="form-control" type="text" id="load" name="load" placeholder="LOAD"
+                    autocomplete="off"></input><br>
+                <button type="button" onclick="out()">GO!</button>
+
+                <audio id="dave_00">
+                    <source src="sounds/crazydave_crazy.mp3" type="audio/mp3"> Unfortunately, your browser does not like
+                    pot heads.</audio>
+                <audio id="dave_01">
+                    <source src="sounds/crazydave_extralong1.mp3" type="audio/mp3"> Unfortunately, your browser does not
+                    like pot heads.</audio>
+                <audio id="dave_02">
+                    <source src="sounds/crazydave_extralong2.mp3" type="audio/mp3"> Unfortunately, your browser does not
+                    like pot heads.</audio>
+                <audio id="dave_03">
+                    <source src="sounds/crazydave_extralong3.mp3" type="audio/mp3"> Unfortunately, your browser does not
+                    like pot heads.</audio>
+                <audio id="dave_04">
+                    <source src="sounds/crazydave_long1.mp3" type="audio/mp3"> Unfortunately, your browser does not like
+                    pot heads.</audio>
+                <audio id="dave_05">
+                    <source src="sounds/crazydave_long2.mp3" type="audio/mp3"> Unfortunately, your browser does not like
+                    pot heads.</audio>
+                <audio id="dave_06">
+                    <source src="sounds/crazydave_long3.mp3" type="audio/mp3"> Unfortunately, your browser does not like
+                    pot heads.</audio>
+                <audio id="dave_07">
+                    <source src="sounds/crazydave_scream1.mp3" type="audio/mp3"> Unfortunately, your browser does not
+                    like pot heads.</audio>
+                <audio id="dave_08">
+                    <source src="sounds/crazydave_scream2.mp3" type="audio/mp3"> Unfortunately, your browser does not
+                    like pot heads.</audio>
+                <audio id="dave_09">
+                    <source src="sounds/crazydave_short1.mp3" type="audio/mp3"> Unfortunately, your browser does not
+                    like pot heads.</audio>
+                <audio id="dave_10">
+                    <source src="sounds/crazydave_short2.mp3" type="audio/mp3"> Unfortunately, your browser does not
+                    like pot heads.</audio>
+                <audio id="dave_11">
+                    <source src="sounds/crazydave_short3.mp3" type="audio/mp3"> Unfortunately, your browser does not
+                    like pot heads.</audio>
+
+                <audio id="jason_00">
+                    <source src="sounds/jason_00.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_01">
+                    <source src="sounds/jason_01.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_02">
+                    <source src="sounds/jason_02.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_03">
+                    <source src="sounds/jason_03.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_04">
+                    <source src="sounds/jason_04.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_05">
+                    <source src="sounds/jason_05.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_06">
+                    <source src="sounds/jason_06.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_07">
+                    <source src="sounds/jason_07.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_08">
+                    <source src="sounds/jason_08.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_09">
+                    <source src="sounds/jason_09.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_10">
+                    <source src="sounds/jason_10.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+                <audio id="jason_11">
+                    <source src="sounds/jason_11.mp3" type="audio/mp3"> Unfortunately, your browser does not wish to
+                    call for Jason.</audio>
+
+                <audio id="sukhbir_0">
+                    <source src="sounds/sukhbir_1.mp3" type="audio/mp3"></audio>
+                <audio id="sukhbir_1">
+                    <source src="sounds/sukhbir_2.mp3" type="audio/mp3"></audio>
+                <audio id="sukhbir_2">
+                    <source src="sounds/sukhbir_3.mp3" type="audio/mp3"></audio>
+                <audio id="sukhbir_3">
+                    <source src="sounds/sukhbir_4.mp3" type="audio/mp3"></audio>
+                <audio id="sukhbir_4">
+                    <source src="sounds/sukhbir_5.mp3" type="audio/mp3"></audio>
+                <audio id="sukhbir_5">
+                    <source src="sounds/sukhbir_6.mp3" type="audio/mp3"></audio>
+            </div>
+            <!-- /div#hide-me-first -->
+        </section>
+        <!-- /section#see-me-first -->
+
+        <footer>
+            <p>@<span id="year"></span> Henry Heng</p>
+            <a href="https://twitter.com/HenryHHW" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>&nbsp;
+            <a href="https://www.instagram.com/deezombiedude/" target="_blank"><i
+                    class="fab fa-instagram fa-lg"></i></a>&nbsp;
+            <a href="https://www.facebook.com/deezombiedude612" target="_blank"><i
+                    class="fab fa-facebook-f fa-lg"></i></a>&nbsp;
+            <a href="https://www.linkedin.com/in/henryheng612/" target="_blank"><i
+                    class="fab fa-linkedin-in fa-lg"></i></a>&nbsp;
+            <a href="https://www.github.com/deezombiedude612" target="_blank"><i
+                    class="fab fa-github fa-lg"></i></a>&nbsp;
+            <a href="https://www.youtube.com/user/deezombiedude612/" target="_blank"><i
+                    class="fab fa-youtube fa-lg"></i></a>
+        </footer>
+        <!-- /footer -->
+
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+
+        <!-- External JS -->
+        <script src="js/constant.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+
+</html>

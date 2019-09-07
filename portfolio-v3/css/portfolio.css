@@ -1,0 +1,65 @@
+/* CSS Document: Portfolio */
+
+/* .card { */
+	/* float: left; */
+	/* margin: 10px;
+	width: 30rem;
+	display: inline-block;
+}
+
+.card-image {
+	max-height: 400px;
+	float: left;
+}
+
+img.card-img {
+	height: 100%;
+} */
+
+body > div.container-fluid {
+	padding-top: 25px;
+}
+
+div.card {
+	/* text-align: center; */
+	/* float: left; */
+	margin: 10px;
+	/* width: 24rem; */
+	width: 100%;
+	display: inline-block;
+}
+
+div.card ul {
+	margin-left: 20px;
+}
+
+.card-img-div {
+	margin: 5px;
+}
+
+.card-img {
+	width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+	.card-horizontal {
+		display: flex;
+		flex: 1 1 auto;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.card-title {
+		text-align: center;
+	}
+
+	.card-img {
+		width: 100%;
+		min-width: 200px;
+		display: inline-block;
+	}
+
+	.card-img-div {
+		text-align: center;
+	}
+}

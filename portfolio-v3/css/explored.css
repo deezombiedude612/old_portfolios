@@ -1,0 +1,117 @@
+/* CSS Document: Christianity Explored Page */
+
+@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes.ttf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes_bold.ttf') format('opentype');
+	font-weight: bold;
+}
+
+body > div.container-fluid {
+    padding-top: 25px;
+}
+
+.tab-pane {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+.explored-title, .explored-text {
+    font-family: 'Whatever It Takes';
+    margin-top: 20px;
+}
+
+.explored-title {
+    text-align: center;
+}
+
+.explored-text {
+    font-size: 24px;
+}
+
+.explored-text-container {
+    margin: 20px;
+}
+
+.nav-pills > li {
+    float: none !important;
+}
+
+.nav-pills .pill-ce .nav-link:not(.active), .nav-pills .pill-le .nav-link:not(.active), .nav-pills .pill-de .nav-link:not(.active) {
+    background-color: none;
+}
+body:not(.dark) .nav-pills .pill-ce .nav-link:not(.active) {
+    color: rgb(255, 0, 0);
+}
+body:not(.dark) .nav-pills .pill-le .nav-link:not(.active) {
+    color: rgb(69, 137, 200);
+}
+body:not(.dark) .nav-pills .pill-de .nav-link:not(.active) {
+    color: rgb(93, 188, 210);
+}
+body:not(.dark) .nav-pills .pill-ce .nav-link:not(.active):hover, body:not(.dark) .nav-pills .pill-le .nav-link:not(.active):hover, body:not(.dark) .nav-pills .pill-de .nav-link:not(.active):hover {
+    color: white;
+}
+
+.nav-pills .pill-ce .active {
+    background-color: rgb(255, 0, 0);
+}
+.nav-pills .pill-ce .nav-link:not(.active):hover {
+    color: white;
+    background-color: rgb(255, 100, 100);
+    -webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.nav-pills .pill-le .active {
+    background-color: rgb(69, 137, 200);
+}
+.nav-pills .pill-le .nav-link:not(.active):hover {
+    color: white;
+    background-color: rgb(102, 197, 252);
+    -webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.nav-pills .pill-de .active {
+    background-color: rgb(93, 188, 210);
+}
+.nav-pills .pill-de .nav-link:not(.active):hover {
+    color: white;
+    background-color: rgb(60, 146, 175);
+    -webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-pills .pill-ce {
+        margin-left: auto;
+    }
+    
+    .nav-pills .pill-de {
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .nav-pills .pill-ce, .nav-pills .pill-le, .nav-pills .pill-de {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

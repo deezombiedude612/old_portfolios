@@ -1,0 +1,197 @@
+/* CSS Document: Homepage */
+
+/* custom fonts */
+@font-face {
+	font-family: 'Daniel';
+	src: url('../fonts/daniel/daniel.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gunny Rewritten';
+	src: url('../fonts/gunny_rewritten/gnyrwn971.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes.ttf') format('truetype');
+}@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes_bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Over the Rainbow';
+	src: url('../fonts/Over_the_Rainbow/OvertheRainbow.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SF Compact Display';
+	src: url('../fonts/sf_compact_display/SFCompactDisplay-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TrashHand';
+    src: url('../fonts/trashhand/TrashHand.TTF') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Leafy';
+    src: url('../fonts/leafy/leafy.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Black Jack';
+    src: url('../fonts/blackjack/BLACKJAR.TTF') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'HanziPen SC';
+    src: url('../fonts/hanzipen-sc/hanzipen-sc-regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SimSun';
+    src: url('../fonts/simsun/SimSun.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "STFangsong";
+    src: url('../fonts/stfangsong/chinese.stfangso.ttf') format('truetype');
+}
+
+:root {
+    --mainColor: #ff9800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    margin: auto;
+    font-family: "SF Compact Display", Arial, sans-serif;
+}
+
+div#menu {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+audio {
+    display: none;
+}
+
+section#see-me-first {
+    /* height: 100vh; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 550px;
+}
+
+section#see-me-first a { 
+    background:
+        -webkit-linear-gradient(left, var(--mainColor) 0%, var(--mainColor) 5px, transparent 5px);
+    background:
+        -o-linear-gradient(left, var(--mainColor) 0%, var(--mainColor) 5px, transparent 5px);
+    background:
+        linear-gradient(to right, var(--mainColor) 0%, var(--mainColor) 5px, transparent 5px);
+    background-repeat: repeat-x;
+    background-size: 100%;
+    color: #000;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+section#see-me-first a:hover {
+    background:
+            -webkit-linear-gradient(left, var(--mainColor) 0%, var(--mainColor) 5px, transparent);
+    background:
+            -o-linear-gradient(left, var(--mainColor) 0%, var(--mainColor) 5px, transparent);
+    background:
+            linear-gradient(to right, var(--mainColor) 0%, var(--mainColor) 5px, transparent);
+    color: black;
+    text-decoration: none;
+}
+/* Link animation source: https://css-tricks.com/having-fun-with-link-hover-effects/ */
+
+h1#title {
+    font-family: "Leafy", "HanziPen SC", "SF Compact Display", Arial, sans-serif;
+    font-size: 72px;
+}
+
+.sub-text {
+    font-family: "Leafy", "HanziPen SC", "SF Compact Display", Arial, sans-serif;
+    font-size: 36px;
+}
+
+div#hide-me-first {
+    text-align: center;
+    font-family: "Leafy", "HanziPen SC", "SF Compact Display", Arial, sans-serif;
+}
+
+div#hide-me-first input[type=text] {
+    border: none;
+    text-align: center;
+    font-size: 36px;
+}
+
+div#hide-me-first input:focus {
+    border: none;
+    outline: none;
+}
+
+div#hide-me-first button {
+    font-size: 36px;
+    border: 1px solid transparent;
+    border-radius: 120px;
+    padding: 0 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+div#hide-me-first button:hover {
+    border: 1px solid grey;
+}
+
+#clue {
+    display: none;
+}
+
+div#dt {
+    float: none;
+    margin: 0 auto;
+}
+
+/* DARK MODE ONLY */
+
+body.dark section#see-me-first a { 
+    color: white;
+}
+
+body.dark div#hide-me-first input, body.dark div#hide-me-first input:focus {
+    background: rgb(30, 30, 30);
+    color: white;
+}
+
+@media only screen and (min-height: 660px) { /* note: manually change minimum height based on amount of content */
+	section#see-me-first {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    h1#title {
+        font-family: "Leafy", "HanziPen SC", "SF Compact Display", Arial, sans-serif;
+        font-size: 42px;
+    }
+    
+    .sub-text {
+        font-family: "Leafy", "HanziPen SC", "SF Compact Display", Arial, sans-serif;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,44 @@
+/* CSS Document: Error Pages */
+
+@font-face {
+    font-family: 'BrianneTod';
+    src: url('../fonts/briannetod/BrianneTod.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Leafy';
+    src: url('../fonts/leafy/leafy.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+	font-family: 'SF Compact Display';
+	src: url('../fonts/sf_compact_display/SFCompactDisplay-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+
+a, a:hover {
+	color: black;
+}
+
+h3 {
+    font-family: "BrianneTod", "Leafy", "SF Compact Display", Arial, sans-serif;
+}
+
+#error-content {
+	height: 100vh;
+	text-align: center;
+}
+
+div.character {
+	padding: 50px 0;
+}
+
+div.character img {
+	max-height: 300px;
+	display: inline-block;
+}
+
+div#dt {
+	float: none;
+	margin: 0 auto;
+}

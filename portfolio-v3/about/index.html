@@ -1,0 +1,490 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Henry Heng | About Me</title>
+
+        <!-- Shortcut Icon -->
+        <link rel="shortcut icon" href="../images/hhicon.png">
+
+        <!-- Bootstrap CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome Icons CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!-- External CSS -->
+        <link href="../css/about.css" rel="stylesheet">
+        <link href="../css/constant.css" rel="stylesheet">
+        <link href="../css/footer.css" rel="stylesheet">
+        <link href="../css/nav.css" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78618719-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-78618719-2');
+        </script>
+    </head>
+
+    <body class="dark">
+        <!-- <nav class="navbar navbar-expand-xl navbar-light transparent navbar-inverse navbar-inner fixed-top"> -->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top" id="navi">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../">
+                    <img id="nav-logo" src="../images/hhicon.png" alt="nav-logo">
+                </a>
+                <!-- /a.navbar-brand -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /button.navbar-toggler -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href=".">About Me<span
+                                    class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="../portfolio/">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://blog.henryheng612.com">Blog</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Miscellaneous
+                            </a>
+                            <!-- /a#navbarDropdownMenuLink -->
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="../community-service/">Community Service</a>
+                                <a class="dropdown-item" href="https://deezombiedude612.wordpress.com/"
+                                    target="_blank">Personal Development</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../explored/">Christianity Explored</a>
+                            </div>
+                            <!-- /div.dropdown-menu dropdown-menu-right -->
+                        </li>
+                        <!-- /li.nav-item dropdown -->
+                    </ul>
+                    <!-- /ul.navbar-nav ml-auto -->
+                </div>
+                <!-- /#navbarResponsive -->
+            </div>
+            <!-- /div#container-fluid -->
+        </nav>
+        <!-- /nav.navbar navbar-expand-xl navbar-light bg-light fixed-top -->
+
+        <div class="container-fluid">
+            <div id="dt">
+                <div><i class="fas fa-sun fa-lg"></i></div>
+                <label class="switch">
+                    <input type="checkbox" id="dark-toggle" onclick="darkToggle()" checked>
+                    <span class="slider round"></span>
+                </label>
+                <div><i class="fas fa-moon fa-lg"></i></div>
+            </div>
+            <!-- /div#dt -->
+
+            <div class="h-100 d-inline-block div-panel" id="sec-intro">
+                <h1>Hey there! Hi there! Ho there!</h1>
+                <div class="col-xl-5 h-100 d-inline-block" id="intro-img-container">
+                    <!-- <img src="../images/portrait.jpg" alt="portrait"> -->
+                    <picture>
+                        <source media="(max-width: 1210px)" srcset="../images/portrait_1210.jpg">
+                        <img src="../images/portrait.jpg" alt="portrait">
+                    </picture>
+                    <h2 class="name-caption">Hian Wee HENG (Henry) <span class="chinese-text">王贤卫</span></h2>
+                </div>
+                <!-- /div#intro-img-container -->
+                <div class="col-xl-7 h-100 d-inline-block" id="intro-text">
+                    <p>
+                        What's up! I'm Henry Heng. I'm a recent Computer Science graduate from Taylor's University,
+                        Malaysia. Currently I am pursuing MSc in Computer Science (By Research) at Sunway University,
+                        Malaysia. My research interests mainly revolve around Algorithm Analysis, Artificial
+                        Intelligence, Cybersecurity, and Cryptography. I enjoy solving Math problems, and playing an
+                        array of casual mobile games in my spare time.
+                    </p>
+                    <p>
+                        I sometimes tend to find myself brushing up on my programming skills while I no longer regularly
+                        attend formal classes on programming in any learning institution. My current preferred language
+                        is C++, but I am also familiar with C, Java, C# and Python 3. I also have recently worked
+                        frequently with MySQL databases as well as various web development languages including HTML,
+                        CSS, PHP, JavaScript and jQuery. At the moment, I am picking up on MATLAB.
+                    </p>
+                    <p>
+                        I have experience guiding weaker peers in subjects I enjoy and excel in, most of which were
+                        gained through my time as a peer leader during my undergraduate studies. Like many other people,
+                        I procrastinate a lot, but that is something I'm not afraid to admit; that is a must if I ever
+                        want to learn to get back up and continue doing what I'm supposed to do!
+                    </p>
+                    <hr>
+                    <div id="downloadables">
+                        <h2>Feel free to download a copy!</h2>
+                        <p>The following links will open a new tab on your browser.</p>
+                        <a class="btn btn-light" href="../pdf/HHW_resume2019.pdf" target="_blank">Résumé</a>
+                        <a class="btn btn-light" href="../pdf/HHW_cv2019.pdf" target="_blank">Curriculum Vitae</a>
+                        <br><br>
+                        <p>You may also drop me an e-mail <a href="mailto:henryheng612@hotmail.com"
+                                id="email-link">(click here)</a> for further enquiries.</p>
+                        <p>
+                            <pre><code>henryheng612[at]hotmail[dot]com</code></pre>
+                        </p>
+                    </div>
+                    <!-- /div#downloadables -->
+                </div>
+                <!-- /div#intro-text -->
+            </div>
+            <!-- /div#sec-intro -->
+            <hr>
+
+            <div class="col-xl-12 h-100 d-inline-block div-panel" id="sec-credentials">
+                <h1>CREDENTIALS</h1>
+
+                <h2>ACADEMIC QUALIFICATIONS</h2>
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-img-div">
+                            <img class="card-img" src="../images/sunway_square.jpg" alt="Sunway University">
+                        </div>
+                        <!-- /div.card-img-div -->
+                        <div class="card-body">
+                            <h4 class="card-title">Sunway University, MALAYSIA</h4>
+                            <h5 class="card-title">MSc in Computer Science (By Research)</h5>
+                            <p class="card-title">01/2019 - Present</p>
+                            <hr>
+                            <p class="card-text">Thesis Title: Fog Computing Resource Management for Real-Time Traffic
+                                Planner System</p>
+                            <p class="card-text">Supervisor: Dr Richard Teck Ken WONG &nbsp; <a
+                                    href="https://university.sunway.edu.my/profiles/sci-tech/Dr-Richard-Wong"><i
+                                        class="fas fa-user fa-sm"></i></a> &nbsp; <a href="https://ricwtk.github.io/"><i
+                                        class="fas fa-link fa-sm"></i></a> &nbsp; <a
+                                    href="mailto:richardwtk@sunway.edu.my"><i class="fas fa-envelope fa-sm"></i></a></p>
+                            <p>
+                                <span style="text-decoration: underline">Co-Supervisors</span>
+                                <br>Sunway University: Dr Lee Seng YEONG &nbsp; <a
+                                    href="https://university.sunway.edu.my/profiles/sci-tech/dr-yeong-lee-seng"><i
+                                        class="fas fa-user fa-sm"></i></a> &nbsp; <a
+                                    href="mailto:leesengy@sunway.edu.my"><i class="fas fa-envelope fa-sm"></i></a>
+                                <br>Universiti Malaya: Assoc. Prof. Dr Nor Badrul Anuar &nbsp; <a
+                                    href="https://umexpert.um.edu.my/badrul"><i class="fas fa-user fa-sm"></i></a>
+                                &nbsp; <a href="mailto:badrul@um.edu.my"><i class="fas fa-envelope fa-sm"></i></a>
+                            </p>
+                            <p>Dual-award programme with Lancaster University, UK</p>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-img-div">
+                            <img class="card-img" src="../images/taylors_square.png" alt="Taylor's University">
+                        </div>
+                        <!-- /div.card-img-div -->
+                        <div class="card-body">
+                            <h4 class="card-title">Taylor's University, MALAYSIA</h4>
+                            <h5 class="card-title">Bachelor of Computer Science (Hons)</h5>
+                            <p class="card-title">08/2015 - 07/2018</p>
+                            <hr>
+                            <p class="card-text">
+                                Graduated with 1st Class Honors
+                                <br>Final CGPA: 3.80 / 4.00
+                            </p>
+                            <p>
+                                <span style="text-decoration: underline">Final Year Project</span>
+                                <br>International Procurement Online Matching System (IPOMS)
+                                <br>Academic Supervisor: Ms Norhidayah HAMZAH &nbsp; <a
+                                    href="https://expert.taylors.edu.my/cv/norhidayah.hamzah"><i
+                                        class="fas fa-user fa-sm"></i></a> &nbsp; <a
+                                    href="mailto:norhidayah.hamzah@taylors.edu.my"><i
+                                        class="fas fa-envelope fa-sm"></i></a>
+                                &nbsp; <a href="linkedin.com/in/norhidayah-hamzah-b03636132"><i
+                                        class="fab fa-linkedin-in fa-md"></i></a>
+                                <br>Industrial Supervisor: Ms Leanne Yee Lian LOH
+                            </p>
+                            <ul>
+                                <li>Recipient of Taylor's Tertiary Merit Scholarship</li>
+                                <li>Obtained Dean's List award for all long academic semesters</li>
+                                <li>Dual-award programme with UWE Bristol, UK</li>
+                            </ul>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-img-div">
+                            <img class="card-img" src="../images/taylors_square.png" alt="Taylor's University">
+                        </div>
+                        <!-- /div.card-img-div -->
+                        <div class="card-body">
+                            <h4 class="card-title">Taylor's University, MALAYSIA</h4>
+                            <h5 class="card-title">Foundation in Computing</h5>
+                            <p class="card-title">08/2014 - 06/2015</p>
+                            <hr>
+                            <p class="card-text">
+                                Completed with Distinction Award
+                                <br>Final CGPA: 3.63 / 4.00
+                            </p>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-img-div">
+                            <img class="card-img" src="../images/wms.png" alt="WMS">
+                        </div>
+                        <!-- /div.card-img-div -->
+                        <div class="card-body">
+                            <h4 class="card-title">Wesley Methodist School Klang, MALAYSIA</h4>
+                            <h5 class="card-title">Sijil Pelajaran Malaysia (SPM)</h5>
+                            <p class="card-title">01/2009 - 11/2013</p>
+                            <hr>
+                            <p class="card-text">Obtained 7 distinction grades out of 11 subjects with high distinction
+                                in
+                                Mathematics and Additional Mathematics</p>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+            </div>
+            <!-- /div#sec-credentials -->
+            <!-- <hr> -->
+
+            <div class="col-xl-12 h-100 d-inline-block div-panel" id="">
+                <h2>CERTIFICATIONS</h2>
+
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-body">
+                            <h4 class="card-title">The Complete Python Programming Course for Beginners</h4>
+                            <hr>
+                            <h4 class="card-title">Code with Mosh</h4>
+                            <p class="card-title">Issued 08/2019</p>
+                            <p class="card-text">Credential ID: cert_wgg1j5wk</p>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-body">
+                            <h4 class="card-title">JavaScript Basics for Beginners</h4>
+                            <hr>
+                            <h4 class="card-title">Code with Mosh</h4>
+                            <p class="card-title">Issued 08/2019</p>
+                            <p class="card-text">Credential ID: cert_73td82xv</p>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-body">
+                            <h4 class="card-title">Google Web Academy Certificate of Achievement (Online Professionals)
+                            </h4>
+                            <hr>
+                            <h4 class="card-title">Google</h4>
+                            <p class="card-title">Issued 07/2016</p>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+            </div>
+            <!-- /div -->
+            <!-- <hr> -->
+
+            <div class="col-xl-12 h-100 d-inline-block div-panel" id="sec-experience">
+                <!-- <h1>EXPERIENCE</h1> -->
+                <h2>EXPERIENCE</h2>
+
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-img-div">
+                            <img class="card-img" src="../images/smita_square.png" alt="SMITA">
+                        </div>
+                        <!-- /div.card-img-div -->
+                        <div class="card-body">
+                            <h4 class="card-title">SME International Trade Association of Malaysia (SMITA)</h4>
+                            <h5 class="card-title">Intern</h5>
+                            <p class="card-title">01/2018 - 03/2018</p>
+                            <hr>
+                            <ul>
+                                <li>Completed Industrial Training as required for the Bachelor of Computer Science
+                                    (Hons) programme offered by Taylor's University</li>
+                                <li>Employed as an intern for a special project</li>
+                                <li>Helped to create videos showcasing company profile and recent initiatives</li>
+                            </ul>
+                            <p class="card-text">
+                                <span style="text-decoration: underline;">Company Synopsis</span><br>SMITA is a
+                                Non-Governmental Organization (NGO) that facilitates and nurtures Small and Medium
+                                Enterprises (SMEs) to tap into the global arena by providing training, expertise and
+                                support services such as trade missions, international conferences and educational
+                                seminars.
+                            </p>
+                            <p class="card-text">Company Website: <a href="http://smitaglobal.org"><i
+                                        class="fas fa-link fa-sm"></i></a></p>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-img-div">
+                            <img class="card-img" src="../images/taylors_square.png" alt="Taylor's University">
+                        </div>
+                        <!-- /div.card-img-div -->
+                        <div class="card-body">
+                            <h4 class="card-title">Taylor's University Admission Office</h4>
+                            <h5 class="card-title">Open Day Helper</h5>
+                            <p class="card-title">02/2017 - 03/2017</p>
+                            <hr>
+                            Key roles:
+                            <ul>
+                                <li>input visitors' information and enrolment status of prospective students into the
+                                    university's database</li>
+                                <li>give tours to keen parents and prospective students around the campus grounds</li>
+                                <li>handle various administrative tasks at the office front desk</li>
+                            </ul>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="card-img-div">
+                            <img class="card-img" src="../images/taylors_square.png" alt="Taylor's University">
+                        </div>
+                        <!-- /div.card-img-div -->
+                        <div class="card-body">
+                            <h4 class="card-title">Taylor's University Student Success Center (SSC)</h4>
+                            <h5 class="card-title">PALS Leader</h5>
+                            <p class="card-title">01/2015 - 06/2018</p>
+                            <hr>
+                            <p class="card-text">
+                                Peer Assisted Learning Service (PALS) is a program managed by the university's SSC to
+                                provide guidance for weak students (typically in first year) in coping with difficult
+                                modules.
+                                I helped provide guidance for junior students from Taylor's School of Computing &
+                                Information Technology (SoCIT) and School of Biosciences (SBS) struggling with various
+                                modules.
+                            </p>
+
+                            Foundation in Computing:
+                            <ul>
+                                <li>Mathematics I (01/2015 - 06/2015)</li>
+                                <li>Algebra & Calculus (08/2015 - 12/2015, 01/2016 - 05/2016)</li>
+                                <li>Discrete Mathematics (02/2016 - 05/2016)</li>
+                                <li>Introduction to Computing Mathematics (08/2017 - 11/2017, 03/2018 - 05/2018)</li>
+                                <li>Mathematics (09/2017 - 11/2017, 04/2018 - 06/2018)</li>
+                            </ul>
+
+                            Foundation in Science:
+                            <ul>
+                                <li>Mathematics (09/2017 - 11/2017, 04/2018 - 06/2018)</li>
+                            </ul>
+
+                            Diploma in Information Technology:
+                            <ul>
+                                <li>Computing Mathematics (08/2016 - 10/2016, 04/2017 - 05/2017)</li>
+                                <li>Object-Oriented Programming (04/2017 - 05/2017)</li>
+                            </ul>
+
+                            Undergraduate Programmes @ SoCIT:
+                            <ul>
+                                <li>Mathematics for Computing I (04/2016 - 07/2016, 09/2016 - 12/2016)</li>
+                                <li>C Programming (1-1 Sessions) (10/2016 - 12/2016)</li>
+                                <li>Computing Mathematics (04/2017 - 06/2017, 09/2017 - 11/2017)</li>
+                            </ul>
+                        </div>
+                        <!-- /div.card-body -->
+                    </div>
+                    <!-- /div.card-horizontal -->
+                </div>
+                <!-- /div.card -->
+            </div>
+            <!-- /div#sec-experience -->
+            <hr>
+
+            <div class="col-xl-12 h-100 d-inline-block div-panel" id="sec-testimonials">
+                <h1>TESTIMONIALS</h1>
+                <!-- <p style="text-align: center;">Not available at the moment, come back soon!</p> -->
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-6">
+                        <p class="testimonial-record">"Henry is very creative and takes instructions well. We are very
+                            happy with the videos he produced for our organisation during his internship. Keep up the
+                            good work!"
+                        </p>
+                        <p class="testimonial-giver">- Ms Leanne LOH (Industry Supervisor for Henry's Bachelor FYP)</p>
+                    </div>
+                    <!-- /div.col-xl-6 -->
+                </div>
+                <!-- /div.row d-flex justify-content-center -->
+            </div>
+            <!-- /div#sec-testimonials -->
+        </div>
+        <!-- /div.container-fluid -->
+
+        <footer>
+            <p>@<span id="year"></span> Henry Heng</p>
+            <a href="https://twitter.com/HenryHHW" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>&nbsp;
+            <a href="https://www.instagram.com/deezombiedude/" target="_blank"><i
+                    class="fab fa-instagram fa-lg"></i></a>&nbsp;
+            <a href="https://www.facebook.com/deezombiedude612" target="_blank"><i
+                    class="fab fa-facebook-f fa-lg"></i></a>&nbsp;
+            <a href="https://www.linkedin.com/in/henryheng612/" target="_blank"><i
+                    class="fab fa-linkedin-in fa-lg"></i></a>&nbsp;
+            <a href="https://www.github.com/deezombiedude612" target="_blank"><i
+                    class="fab fa-github fa-lg"></i></a>&nbsp;
+            <a href="https://www.youtube.com/user/deezombiedude612/" target="_blank"><i
+                    class="fab fa-youtube fa-lg"></i></a>
+        </footer>
+        <!-- /footer -->
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+
+        <!-- External JS -->
+        <script src="../js/about.js"></script>
+        <script src="../js/constant.js"></script>
+    </body>
+
+</html>

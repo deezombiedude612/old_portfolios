@@ -1,0 +1,110 @@
+/* CSS Document: Transcripts */
+
+/* custom fonts */
+@font-face {
+	font-family: 'SF Compact Display';
+	src: url('../fonts/sf_compact_display/SFCompactDisplay-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+
+/* general overall layout */
+html, body {
+	margin: 0;
+	padding: 0;
+	/*min-width: 100vw;*/
+}
+
+body {
+	/*width: 1000px;*/
+	margin: auto;
+
+	/*font-family: Arial, sans-serif;*/
+	font-family: "SF Compact Display", Arial, sans-serif;
+}
+
+div#logo, div#logo-short {
+	margin: 50px auto;
+	text-align: center;
+}
+
+div#logo > img {
+	/*width: 300px;*/
+	max-width: 40%;
+	min-width: 300px;
+}
+
+div#logo-short > img {
+	width: 200px;
+}
+
+table {
+	width: 100%;
+	padding-bottom: 50px;
+	margin: auto;
+}
+
+table.tbldetails td {
+	padding: 3px;
+}
+
+table.tbldetails td.tblName {
+	/*text-align: right;*/
+	width: 25%;
+}
+
+table.tbldetails td.tblTitle {
+	/*text-align: left;*/
+	width: 75%;
+}
+
+table.tblResults td {
+	vertical-align: top;
+}
+
+table.tblResults tr.end-semester td {
+	padding-bottom: 20px;
+}
+
+.center-text {
+	text-align: center;
+}
+
+table.tblconclusion td {
+	vertical-align: top;
+}
+
+/* grade legend */
+table.grade-legend {
+	border-collapse: collapse;
+}
+
+table.grade-legend th, table.grade-legend td {
+	border: .25pt solid black;
+	padding: 10px 5px;
+}
+
+
+@media only screen and (max-width: 999px) {
+	html {
+		overflow: auto;
+	}
+	
+	body {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	body {
+		width: 1000px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	html {
+		min-width: 100%;
+	}
+
+	body {
+		margin: 0;
+	}
+}

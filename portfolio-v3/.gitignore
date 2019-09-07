@@ -1,0 +1,5 @@
+.DS_Store
+mysql/*
+admin/*
+.vscode
+portfolio_v3.sql
