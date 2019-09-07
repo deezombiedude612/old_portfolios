@@ -1,0 +1,229 @@
+/* custom fonts */
+@font-face {
+	font-family: 'Balloon';
+	src: url('../fonts/balloon/balloon.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'BrianneTod';
+	src: url('../fonts/briannetod/BrianneTod.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Daniel';
+	src: url('../fonts/daniel/daniel.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gunny Rewritten';
+	src: url('../fonts/gunny_rewritten/gnyrwn971.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes.ttf') format('truetype');
+}@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes_bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Over the Rainbow';
+	src: url('../fonts/Over_the_Rainbow/OvertheRainbow.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SF Compact Display';
+	src: url('../fonts/sf_compact_display/SFCompactDisplay-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+
+/* general overall layout */
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 100vw;
+}
+
+body {
+	/*background: cornflowerblue;*/
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #ffffff url("../images/generic.jpg") top center fixed;
+	/*background-size: cover;*/
+	min-height: 100vh;
+}
+
+#front-title {
+	font-family: 'Over the Rainbow', sans-serif;
+	font-size: 54px;
+	text-align: center;
+}
+
+.section-title {
+	font-family: "Over the Rainbow", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+p, section#timeline ul.ul-modlist li, ol li, ul li {
+	font-family: "SF Compact Display", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 18px;
+}
+
+h2 {
+	font-family: "SF Compact Display", sans-serif;
+}
+
+button {
+	background-color: white;
+	display: inline-block;
+	padding: 15px 32px;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	margin: .5em .5em 2em .5em;
+	border-radius: 8px;
+}
+
+button:hover {
+	background-color: rgba(256, 256, 256, 0.1);
+	color: white;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+div.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+div.row {
+	padding: 50px 0;
+	text-align: center;
+}
+
+/* cards */
+
+.flip-card {
+	background-color: transparent;
+	width: 500px;
+	height: 400px;
+	/*border: 1px solid #f1f1f1;*/
+	display: inline-block;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	padding: 10px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	/*background-color: #bbb;*/
+	background-color: #fff;
+	color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+	/*background-color: dodgerblue;*/
+	border: 5px solid white;
+	color: white;
+	transform: rotateY(180deg);
+	font-family: "SF Compact Display", sans-serif;
+}
+
+/*.flip-card-back-gsh {*/
+	/*!*background-image: url("../images/card-goodsamaritanhome.jpg");*!*/
+	/*background-size: cover;*/
+	/*background-position: center;*/
+	/*z-index: 0;*/
+/*}*/
+div.flip-card-back-gsh::after {
+	background-image: url("../images/card-goodsamaritanhome.jpg");
+	/*background: rgba(0, 0, 0, 0.5);*/
+	z-index: -1;
+}
+
+.flip-card-back-elshaddai {
+	background: rgba(0, 0, 0, 0.5) url("../images/card-elshaddai.png") center no-repeat;
+}
+
+div.gsh-card, div.elshaddai-card {
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 400px;
+}
+
+div.gsh-card {
+	background-image: url("../images/card-goodsamaritanhome.jpg");
+	background-size: cover;
+}
+
+div.elshaddai-card {
+	background-image: url("../images/card-elshaddai.png");
+}
+
+div.v-middle {
+	display: inline-block;
+	/*line-height: 2.5cm;*/
+	/*height: inherit;*/
+	margin: 87px;
+}
+
+/* csi entries */
+h2.mini_title {
+	font-family: "Gunny Rewritten", "SF Compact Display", sans-serif;
+	text-align: center;
+	font-size: 36px;
+}
+
+p.quote {
+	font-family: "Gunny Rewritten", "SF Compact Display", sans-serif;
+	text-align: center;
+	font-size: 28px;
+}
+
+div.journal {
+	padding: 10% 15%;
+	background-image: url("../images/oldpaper.jpg");
+	background-position: top;
+	background-size: cover;
+	margin: auto;
+}
+
+div.video {
+	text-align: center;
+	padding-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+	div.wrapper {
+		width: 95%;
+	}
+}

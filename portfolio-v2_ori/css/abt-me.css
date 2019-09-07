@@ -1,0 +1,366 @@
+/* custom fonts */
+@font-face {
+	font-family: 'Balloon';
+	src: url('../fonts/balloon/balloon.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'BrianneTod';
+	src: url('../fonts/briannetod/BrianneTod.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Daniel';
+	src: url('../fonts/daniel/daniel.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gunny Rewritten';
+	src: url('../fonts/gunny_rewritten/gnyrwn971.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes.ttf') format('truetype');
+}@font-face {
+	font-family: 'Whatever It Takes';
+	src: url('../fonts/whatever_it_takes/whatever_it_takes_bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Over the Rainbow';
+	src: url('../fonts/Over_the_Rainbow/OvertheRainbow.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SF Compact Display';
+	src: url('../fonts/sf_compact_display/SFCompactDisplay-Regular.otf') format('opentype');
+	font-weight: normal;
+}
+
+/* general overall layout */
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 100vw;
+}
+
+body {
+	/*background: cornflowerblue;*/
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #ffffff url("../images/generic.jpg") top center fixed;
+	/*background-size: cover;*/
+}
+
+#front-title {
+	font-family: 'Over the Rainbow', sans-serif;
+	font-size: 54px;
+	text-align: center;
+}
+
+.section-title {
+	font-family: "Over the Rainbow", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+p, section#timeline ul.ul-modlist li, ol li, ul li {
+	font-family: "SF Compact Display", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 18px;
+}
+
+h2 {
+	font-family: "SF Compact Display", sans-serif;
+}
+
+button {
+	background-color: white;
+	display: inline-block;
+	padding: 15px 32px;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	margin: .5em .5em 2em .5em;
+	border-radius: 8px;
+}
+
+button:hover {
+	background-color: rgba(256, 256, 256, 0.1);
+	color: white;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+/* basic details */
+section#basic_details {
+	/*background: aquamarine;*/
+	background-color: rgba(0, 0, 0, 0.8);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	/*margin-right: 15px;*/
+	width: 100%;
+}
+
+div#portrait, div#basics-text {
+	padding: 20px;
+}
+
+div#portrait {
+	float: left;
+	/*background: aqua;*/
+}
+
+div#portrait > img {
+	object-fit: cover;
+	width: 100%;
+	min-height: 375px;
+}
+
+div#basics-text {
+	/*background: darkorange;*/
+	/*background: black;*/
+	color: white;
+}
+
+/* education (timeline) */
+/* reference: https://www.youtube.com/watch?v=X6aMWDDJlJg  */
+section#timeline {
+	position: relative;
+	margin: 50px auto;
+	padding: 40px 0;
+}
+
+section#timeline:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	background: #c5c5c5;
+}
+
+section#timeline div.content {
+	padding-bottom: 20px;
+	/*background: rgba(0, 0, 0, 0.25);*/
+}
+
+section#timeline h2, h4 {
+	font-family: 'BrianneTod', sans-serif;
+}
+
+section#timeline ul#tl {
+	margin: 0;
+	padding: 0;
+}
+
+section#timeline ul#tl li.timeline-item {
+	list-style: none;
+	position: relative;
+	width: 50%;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+section#timeline ul#tl li.timeline-item:nth-child(odd) {
+	float: left;
+	text-align: right;
+	clear: both;
+}
+section#timeline ul#tl li.timeline-item:nth-child(even) {
+	float: right;
+	text-align: left;
+	clear: both;
+}
+
+section#timeline ul#tl li.timeline-item:before {
+	content: '';
+	background: rgba(255, 140, 0, 1);
+	box-shadow: 0 0 0 3px rgba(255, 140, 0, 1);
+	position: absolute;
+	/*top: 24px;*/
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+section#timeline ul#tl li.timeline-item:nth-child(odd):before {
+	right: -6px;
+}
+section#timeline ul#tl li.timeline-item:nth-child(even):before {
+	left: -4px;
+}
+
+section#timeline ul#tl li.timeline-item div.time, section#timeline ul#tl li.timeline-item div.mobile-time {
+	/*background: rgba(233, 33, 99, 1);*/
+	/*box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);*/
+	/*color: #fff;*/
+	/*background-size: contain, cover;*/
+	background-image: url("../images/nicksplat.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	margin: 0;
+	padding: 8px 16px;
+	border-radius: 18px;
+}
+
+section#timeline ul#tl li.timeline-item div.time {
+	top: 12px;
+	position: absolute;
+}
+
+section#timeline ul#tl li.timeline-item div.mobile-time {
+	clear: both;
+	width: max-content;
+	margin-bottom: 10px;
+}
+
+section#timeline ul#tl li.timeline-item div.time h4, section#timeline ul#tl li.timeline-item div.mobile-time h4 {
+	/*margin: 0;*/
+	padding: 0;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+section#timeline ul#tl li.timeline-item:nth-child(odd) div.time {
+	right: -200px;
+}
+section#timeline ul#tl li.timeline-item:nth-child(even) div.time {
+	left: -200px;
+}
+
+section#timeline ul#tl li.timeline-item h2.t-head {
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+
+section#timeline p.t-location {
+	font-family: "Gunny Rewritten", sans-serif;
+	font-size: 26px;
+}
+
+section#timeline ul#tl li.timeline-item p {
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+section#timeline ul.ul-modlist {
+	list-style: disc;
+}
+
+section#timeline div.module-list {
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+	overflow: hidden;
+	text-align: left;
+}
+
+section#timeline button.collapsible {
+	margin-top: 20px;
+	padding: 8px 16px;
+	font-size: 16px;
+}
+
+/* experience (work) */
+section#experience {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 994px) {
+	/* timeline */
+	section#timeline:before {
+		left: 50px;
+	}
+
+	section#timeline ul#tl li.timeline-item:nth-child(odd), section#timeline ul#tl li.timeline-item:nth-child(even) {
+		position: relative;
+		width: 100%;
+		padding: 20px 40px;
+		text-align: left;
+	}
+
+	section#timeline ul#tl li.timeline-item:nth-child(odd):before, section#timeline ul#tl li.timeline-item:nth-child(even):before {
+		left: 46px;
+	}
+
+	section#timeline ul#tl li.timeline-item:before {
+		content: '';
+		position: absolute;
+		height: 10px;
+		border-radius: 50%;
+		top: 60px;
+	}
+
+	section#timeline ul#tl li.timeline-item div.time {
+		/*top: 0;*/
+		display: none;
+	}
+
+	section#timeline div.content {
+		margin-left: 40px;
+	}
+}
+@media only screen and (min-width: 995px) {
+	/* timeline */
+	section#timeline {
+		width: 1000px;
+	}
+
+	section#timeline ul#tl li.timeline-item:before {
+		top: 50px;
+	}
+
+	section#timeline div.content {
+		padding-top: 25px;
+	}
+
+	section#timeline ul#tl li.timeline-item div.mobile-time {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	div#portrait {
+		min-width: 250px;
+	}
+
+	br.mobile-only {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	section#basic_details {
+		display: inline-block;
+		width: 100%;
+	}
+
+	div#portrait, div#basics-text {
+		width: calc(100vw - 30px);
+		padding: 15px;
+	}
+
+	div#portrait {
+		text-align: center;
+	}
+
+	div#portrait > img {
+		display: inline-block;
+		/*max-width: 300px;*/
+		height: 450px;
+	}
+
+	section#experience {
+		width: 90%;
+	}
+}
